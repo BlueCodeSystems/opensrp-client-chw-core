@@ -25,28 +25,20 @@ public class NavigationListener implements View.OnClickListener {
         if (v.getTag() instanceof String) {
             String tag = (String) v.getTag();
             switch (tag) {
-                case CoreConstants.DrawerMenu.CHILD_CLIENTS:
-                    startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.CHILD_REGISTER_ACTIVITY));
+                case CoreConstants.DrawerMenu.INDEX:
+                    startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.INDEX_REGISTER_ACTIVITY));
                     break;
                 case CoreConstants.DrawerMenu.ALL_FAMILIES:
                     startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.FAMILY_REGISTER_ACTIVITY));
                     break;
-                case CoreConstants.DrawerMenu.ANC:
-                    startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.ANC_REGISTER_ACTIVITY));
+                case CoreConstants.DrawerMenu.BENEFICIARIES:
+                    startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.BENEFICIARIES_REGISTER_ACTIVITY));
                     break;
                 case CoreConstants.DrawerMenu.LD:
                     Toast.makeText(activity.getApplicationContext(), CoreConstants.DrawerMenu.LD, Toast.LENGTH_SHORT).show();
                     break;
-                case CoreConstants.DrawerMenu.PNC:
-                    startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.PNC_REGISTER_ACTIVITY));
-                    break;
-                case CoreConstants.DrawerMenu.FAMILY_PLANNING:
-                    Class fPlanning = getActivity(CoreConstants.REGISTERED_ACTIVITIES.FP_REGISTER_ACTIVITY);
-                    if (fPlanning == null) {
-                        Toast.makeText(activity.getApplicationContext(), CoreConstants.DrawerMenu.FAMILY_PLANNING, Toast.LENGTH_SHORT).show();
-                    } else {
-                        startRegisterActivity(fPlanning);
-                    }
+                case CoreConstants.DrawerMenu.CASE_PLANS:
+                    startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.CASE_PLAN_REGISTER_ACTIVITY));
                     break;
 
                 case CoreConstants.DrawerMenu.MALARIA:
