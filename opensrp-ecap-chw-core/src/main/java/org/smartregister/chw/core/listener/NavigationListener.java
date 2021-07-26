@@ -25,6 +25,9 @@ public class NavigationListener implements View.OnClickListener {
         if (v.getTag() instanceof String) {
             String tag = (String) v.getTag();
             switch (tag) {
+                case CoreConstants.DrawerMenu.IDENTIFICATION:
+                    startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.IDENTIFIED_REGISTER_ACTIVITY));
+                    break;
                 case CoreConstants.DrawerMenu.INDEX:
                     startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.INDEX_REGISTER_ACTIVITY));
                     break;

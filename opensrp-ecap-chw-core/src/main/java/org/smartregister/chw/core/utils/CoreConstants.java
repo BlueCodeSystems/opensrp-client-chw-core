@@ -738,6 +738,8 @@ public class CoreConstants {
         public static final String BENEFICIARIES = "Beneficiaries";
         public static final String CASE_PLANS ="Case plans";
         public static final String UPDATES = "Updates";
+        public static final String IDENTIFICATION = "Identification";
+
     }
 
     public static final class RULE_FILE {
@@ -964,6 +966,7 @@ public class CoreConstants {
     }
 
     public static final class REGISTERED_ACTIVITIES {
+        public static final String IDENTIFIED_REGISTER_ACTIVITY = "IDENTIFIED_REGISTER_ACTIVITY";
         public static final String CHILD_REGISTER_ACTIVITY = "CHILD_REGISTER_ACTIVITY";
         public static final String INDEX_REGISTER_ACTIVITY = "INDEX_REGISTER_ACTIVITY";
         public static final String BENEFICIARIES_REGISTER_ACTIVITY = "BENEFICIARIES_REGISTER_ACTIVITY";
