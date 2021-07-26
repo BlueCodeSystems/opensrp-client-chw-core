@@ -686,6 +686,7 @@ public class CoreConstants {
         public static final String FAMILY_PLANNING_UPDATE = "ec_family_planning_update";
         public static final String NOTIFICATION_UPDATE = "notification_update";
         public static final String INDEPENDENT_CLIENT = "ec_independent_client";
+        public static final String EC_CLIENT_INDEX = "ec_client_index";
     }
 
     public static final class INTENT_KEY {
@@ -728,6 +729,9 @@ public class CoreConstants {
         public static final String PNC = "PNC";
         public static final String FAMILY_PLANNING = "Family Planning";
         public static final String MALARIA = "Malaria";
+        public static final String INDEX = "Index";
+        public static final String CASE_PLAN = "Case plan";
+        public static final String BENEFICIARIES = "Beneficiaries";
         public static final String REFERRALS = "Referrals";
         public static final String STOCK_USAGE_REPORT = "StockUsageItemModel usage report";
         public static final String INDEX = "Index";
@@ -961,6 +965,9 @@ public class CoreConstants {
 
     public static final class REGISTERED_ACTIVITIES {
         public static final String CHILD_REGISTER_ACTIVITY = "CHILD_REGISTER_ACTIVITY";
+        public static final String INDEX_REGISTER_ACTIVITY = "INDEX_REGISTER_ACTIVITY";
+        public static final String BENEFICIARIES_REGISTER_ACTIVITY = "BENEFICIARIES_REGISTER_ACTIVITY";
+        public static final String CASE_PLAN_REGISTER_ACTIVITY = "CASE_PLAN_REGISTER_ACTIVITY";
         public static final String FAMILY_REGISTER_ACTIVITY = "FAMILY_REGISTER_ACTIVITY";
         public static final String ANC_REGISTER_ACTIVITY = "ANC_REGISTER_ACTIVITY";
         public static final String PNC_REGISTER_ACTIVITY = "PNC_REGISTER_ACTIVITY";
