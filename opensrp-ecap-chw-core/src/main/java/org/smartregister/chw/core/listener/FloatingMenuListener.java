@@ -3,8 +3,10 @@ package org.smartregister.chw.core.listener;
 import android.app.Activity;
 
 import org.smartregister.chw.core.R;
+import org.smartregister.chw.core.activity.CoreFamilyProfileActivity;
 import org.smartregister.chw.core.fragment.AddMemberFragment;
 import org.smartregister.chw.core.fragment.FamilyCallDialogFragment;
+import org.smartregister.chw.core.utils.CoreConstants;
 
 import java.lang.ref.WeakReference;
 
@@ -56,6 +58,9 @@ public class FloatingMenuListener implements OnClickFloatingMenu {
                 AddMemberFragment addmemberFragment = AddMemberFragment.newInstance();
                 addmemberFragment.setContext(context.get());
                 addmemberFragment.show(context.get().getFragmentManager(), AddMemberFragment.DIALOG_TAG);
+            } else if(viewId == R.id.vunarability_assessment_layout){
+                 //TODO add vulnarability assesment form name
+                ((CoreFamilyProfileActivity) context.get()).startFormActivity("caregiver_household_assessment.json", null, "");
             }
         }
     }

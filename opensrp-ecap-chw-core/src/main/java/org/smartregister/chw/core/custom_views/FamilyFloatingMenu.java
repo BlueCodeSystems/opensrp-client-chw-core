@@ -25,6 +25,7 @@ public class FamilyFloatingMenu extends LinearLayout implements View.OnClickList
 
     private View callLayout;
     private View addNewMember;
+    private View assessment;
 
     public FamilyFloatingMenu(Context context) {
         super(context);
@@ -60,9 +61,12 @@ public class FamilyFloatingMenu extends LinearLayout implements View.OnClickList
         addNewMember = findViewById(R.id.add_new_member_layout);
         addNewMember.setOnClickListener(this);
 
+        assessment = findViewById(R.id.vunarability_assessment_layout);
+        assessment.setOnClickListener(this);
+
         callLayout.setClickable(false);
         addNewMember.setClickable(false);
-
+        assessment.setClickable(false);
         menuBar.setVisibility(GONE);
 
     }
@@ -80,9 +84,11 @@ public class FamilyFloatingMenu extends LinearLayout implements View.OnClickList
 
             callLayout.startAnimation(fabClose);
             addNewMember.startAnimation(fabClose);
+            assessment.startAnimation(fabClose);
 
             callLayout.setClickable(false);
             addNewMember.setClickable(false);
+            assessment.setClickable(false);
             isFabMenuOpen = false;
 
         } else {
@@ -93,10 +99,11 @@ public class FamilyFloatingMenu extends LinearLayout implements View.OnClickList
 
             callLayout.startAnimation(fabOpen);
             addNewMember.startAnimation(fabOpen);
+            assessment.startAnimation(fabOpen);
 
             callLayout.setClickable(true);
             addNewMember.setClickable(true);
-
+            assessment.setClickable(true);
             isFabMenuOpen = true;
         }
     }

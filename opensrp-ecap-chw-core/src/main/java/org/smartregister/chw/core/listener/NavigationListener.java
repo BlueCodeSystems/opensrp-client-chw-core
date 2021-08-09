@@ -26,20 +26,13 @@ public class NavigationListener implements View.OnClickListener {
             String tag = (String) v.getTag();
             switch (tag) {
                 case CoreConstants.DrawerMenu.IDENTIFICATION:
-                    startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.IDENTIFIED_REGISTER_ACTIVITY));
+                    startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.IDENTIFICATION_REGISTER_ACTIVITY));
                     break;
-                case CoreConstants.DrawerMenu.INDEX:
-                    startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.INDEX_REGISTER_ACTIVITY));
-                    break;
-                case CoreConstants.DrawerMenu.INDEX:
-                    startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.INDEX_REGISTER_ACTIVITY));
-                    break;
+
                 case CoreConstants.DrawerMenu.CASE_PLAN:
                     startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.CASE_PLAN_REGISTER_ACTIVITY));
                     break;
-                case CoreConstants.DrawerMenu.BENEFICIARIES:
-                    startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.BENEFICIARIES_REGISTER_ACTIVITY));
-                    break;
+
                 case CoreConstants.DrawerMenu.ALL_FAMILIES:
                     startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.FAMILY_REGISTER_ACTIVITY));
                     break;
