@@ -160,6 +160,7 @@ dependencies {
         exclude group: 'io.ona.rdt-capture', module: 'lib'
         exclude group: 'com.google.guava', module: 'guava'
     }
+
     api('org.smartregister:opensrp-client-core:4.3.6-SNAPSHOT@aar') {
         transitive = true
         exclude group: 'com.github.bmelnychuk', module: 'atv'
@@ -354,7 +355,7 @@ task androidSourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
 }
 
-version = "1.0.3-RELEASE"
+version = "1.0.4-RELEASE"
 
 def properties = new Properties()
 properties.load(new FileInputStream(rootProject.file("local.properties")))

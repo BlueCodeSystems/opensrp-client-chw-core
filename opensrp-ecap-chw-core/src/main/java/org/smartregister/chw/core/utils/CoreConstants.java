@@ -687,6 +687,7 @@ public class CoreConstants {
         public static final String NOTIFICATION_UPDATE = "notification_update";
         public static final String INDEPENDENT_CLIENT = "ec_independent_client";
         public static final String EC_CLIENT_INDEX = "ec_client_index";
+        public static final String EC_MOTHER_INDEX = "ec_mother_index";
     }
 
     public static final class INTENT_KEY {
@@ -719,6 +720,7 @@ public class CoreConstants {
 
     public static final class DrawerMenu {
         public static final String ALL_CLIENTS = "All Clients";
+        public static final String MOTHER_REGISTER = "Mother Register";
         public static final String ALL_FAMILIES = "All Families";
         public static final String ANC_CLIENTS = "ANC Clients";
         public static final String CHILD_CLIENTS = "Child Clients";
@@ -966,6 +968,7 @@ public class CoreConstants {
     public static final class REGISTERED_ACTIVITIES {
         public static final String IDENTIFICATION_REGISTER_ACTIVITY = "IDENTIFICATION_REGISTER_ACTIVITY";
         public static final String CHILD_REGISTER_ACTIVITY = "CHILD_REGISTER_ACTIVITY";
+        public static final String MOTHER_REGISTER_ACTIVITY = "MOTHER_REGISTER_ACTIVITY";
         public static final String INDEX_REGISTER_ACTIVITY = "INDEX_REGISTER_ACTIVITY";
         public static final String BENEFICIARIES_REGISTER_ACTIVITY = "BENEFICIARIES_REGISTER_ACTIVITY";
         public static final String CASE_PLAN_REGISTER_ACTIVITY = "CASE_PLAN_REGISTER_ACTIVITY";
