@@ -103,7 +103,7 @@ public class NavigationInteractor implements NavigationContract.Interactor {
                 return NavigationDao.getQueryCount(motherIndexCountSql);
 
             case CoreConstants.TABLE_NAME.FAMILY:
-                String sqlFamily = "select count(*) from ec_family where date_removed is null AND (entity_type = 'ec_family' OR entity_type = 'ec_family_member' OR entity_type IS NULL)";
+                String sqlFamily = "select count(*) from ec_family where is_closed is NOT 1";
                 return NavigationDao.getQueryCount(sqlFamily);
 
             case CoreConstants.TABLE_NAME.ANC_MEMBER:

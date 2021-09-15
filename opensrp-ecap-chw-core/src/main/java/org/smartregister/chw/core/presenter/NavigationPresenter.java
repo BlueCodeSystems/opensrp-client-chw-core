@@ -48,6 +48,7 @@ public class NavigationPresenter implements NavigationContract.Presenter {
         tableMap.put(CoreConstants.DrawerMenu.INDEX, CoreConstants.TABLE_NAME.EC_CLIENT_INDEX);
         tableMap.put(CoreConstants.DrawerMenu.MOTHER_REGISTER, CoreConstants.TABLE_NAME.EC_MOTHER_INDEX);
         tableMap.put(CoreConstants.DrawerMenu.ALL_FAMILIES, CoreConstants.TABLE_NAME.FAMILY);
+        tableMap.put(CoreConstants.DrawerMenu.HOUSEHOLD_REGISTER, CoreConstants.TABLE_NAME.FAMILY);
         tableMap.put(CoreConstants.DrawerMenu.CHILD_CLIENTS, CoreConstants.TABLE_NAME.CHILD);
         tableMap.put(CoreConstants.DrawerMenu.ANC_CLIENTS, CoreConstants.TABLE_NAME.ANC_MEMBER);
         tableMap.put(CoreConstants.DrawerMenu.ANC, CoreConstants.TABLE_NAME.ANC_MEMBER);
@@ -95,7 +96,7 @@ public class NavigationPresenter implements NavigationContract.Presenter {
                 @Override
                 public void onError(Exception e) {
                     // getNavigationView().displayToast(activity, "Error retrieving count for " + tableMap.get(mModel.getNavigationItems().get(finalX).getMenuTitle()));
-                    Timber.e("Error retrieving count for %s", tableMap.get(mModel.getNavigationItems().get(finalX).getMenuTitle()));
+                    //Timber.e("Error retrieving count for %s", tableMap.get(mModel.getNavigationItems().get(finalX).getMenuTitle()));
                 }
             });
             x++;

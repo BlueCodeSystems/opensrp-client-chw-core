@@ -76,7 +76,7 @@ public class NavigationMenu implements NavigationContract.View, SyncStatusBroadc
     private NavigationContract.Presenter mPresenter;
     private View parentView;
     private Timer timer;
-    private static String selectedView = CoreConstants.DrawerMenu.ALL_FAMILIES;
+    private static String selectedView = CoreConstants.DrawerMenu.HOUSEHOLD_REGISTER;
 
     public static void setupNavigationMenu(CoreChwApplication application, NavigationMenu.Flavour menuFlavor,
                                            NavigationModel.Flavor modelFlavor, Map<String, Class> registeredActivities, boolean showDeviceToDeviceSync) {
