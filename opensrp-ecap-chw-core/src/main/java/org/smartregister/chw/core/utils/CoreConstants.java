@@ -967,6 +967,7 @@ public class CoreConstants {
 
     public static final class REGISTERED_ACTIVITIES {
         public static final String IDENTIFICATION_REGISTER_ACTIVITY = "IDENTIFICATION_REGISTER_ACTIVITY";
+        public static final String HOUSEHOLD_REGISTER_ACTIVITY = "HOUSEHOLD_REGISTER_ACTIVITY";
         public static final String CHILD_REGISTER_ACTIVITY = "CHILD_REGISTER_ACTIVITY";
         public static final String MOTHER_REGISTER_ACTIVITY = "MOTHER_REGISTER_ACTIVITY";
         public static final String INDEX_REGISTER_ACTIVITY = "INDEX_REGISTER_ACTIVITY";
